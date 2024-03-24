@@ -5,14 +5,14 @@
 
     <groupId>com.lizhengi</groupId>
     <artifactId>lizhengi-ems</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>lizhengi-ems</name>
     <description>lizhengi-ems</description>
 
     <!-- 父模块打包类型必须为pom -->
     <packaging>pom</packaging>
 
-    <!-- parent指明继承关系，给出被继承的父项目的具体信息 -->
+    <!-- parent 指明继承关系，给出被继承的父项目的具体信息 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -50,28 +50,31 @@
             <dependency>
                 <groupId>com.lizhengi</groupId>
                 <artifactId>lizhengi-ems-web</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.lizhengi</groupId>
                 <artifactId>lizhengi-ems-common</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.lizhengi</groupId>
                 <artifactId>lizhengi-ems-dao</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.lizhengi</groupId>
                 <artifactId>lizhengi-ems-service</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.lizhengi</groupId>
                 <artifactId>lizhengi-ems-api</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
+            <dependency>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.8.1</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -80,6 +83,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- 执行 `mvn -N versions:update-child-modules` 则会自动把子 pom 的 `<parent>` 标签中的 `version` 更新为和父 pom 一致-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.8.1</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
             </plugin>
         </plugins>
     </build>

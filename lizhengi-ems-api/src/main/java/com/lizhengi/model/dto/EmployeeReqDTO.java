@@ -1,0 +1,50 @@
+package com.lizhengi.model.dto;
+
+import lombok.Data;
+
+import java.util.List;
+
+/**
+ * Req 查询信息的 DTO 对象
+ *
+ * @author 栗筝i
+ */
+@Data
+public class EmployeeReqDTO {
+    /**
+     * 员工编号
+     */
+    private Integer empNo;
+    /**
+     * 名字
+     */
+    private String firstName;
+    /**
+     * 姓氏
+     */
+    private String lastName;
+    /**
+     * 出生日期（范围查找-开始）
+     */
+    private String birthDateStart;
+    /**
+     * 出生日期（范围查找-结束）
+     */
+    private String birthDateEnd;
+    /**
+     * 入职日期（范围查找-开始）
+     */
+    private String hireDateStart;
+    /**
+     * 入职日期（范围查找-结束）
+     */
+    private String hireDateEnd;
+    /**
+     * 部门（多选）
+     */
+    private List<String> deptNames;
+    /**
+     * 职位（多选）
+     */
+    private List<String> titles;
+}

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lizhengi-ems-web</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>lizhengi-ems-web</name>
     <description>lizhengi-ems-web</description>
 
@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.lizhengi</groupId>
         <artifactId>lizhengi-ems</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.lizhengi</groupId>
             <artifactId>lizhengi-ems-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

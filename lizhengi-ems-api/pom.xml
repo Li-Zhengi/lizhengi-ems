@@ -4,7 +4,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lizhengi-ems-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>lizhengi-ems-api</name>
     <description>lizhengi-ems-api</description>
 
@@ -12,7 +11,7 @@
     <parent>
         <groupId>com.lizhengi</groupId>
         <artifactId>lizhengi-ems</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -24,7 +23,11 @@
         <dependency>
             <groupId>com.lizhengi</groupId>
             <artifactId>lizhengi-ems-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
