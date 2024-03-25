@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lizhengi-ems-dao</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>lizhengi-ems-dao</name>
     <description>lizhengi-ems-dao</description>
 
@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.lizhengi</groupId>
         <artifactId>lizhengi-ems</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.3-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.lizhengi</groupId>
             <artifactId>lizhengi-ems-common</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
 
         <!-- MySQL 数据库驱动 -->
