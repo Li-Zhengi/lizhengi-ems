@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author 栗筝i
  */
+@Tag(name = "员工信息 Controller")
 @RestController
 @RequestMapping("/api/lizhengi/employees")
 public class EmployeesController {
@@ -33,6 +34,7 @@ public class EmployeesController {
      * @param req req
      * @return resp
      */
+    @Operation(summary = "查询员工信息")
     @RequestMapping(path = {"/list"}, method = RequestMethod.POST)
     public ListEmployeeResp listEmployees(@RequestBody ListEmployeeReq req) {
         return service.listEmployees(req);
