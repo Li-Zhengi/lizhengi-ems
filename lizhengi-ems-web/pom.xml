@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lizhengi-ems-web</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>lizhengi-ems-web</name>
     <description>lizhengi-ems-web</description>
 
@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.lizhengi</groupId>
         <artifactId>lizhengi-ems</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.3-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -24,7 +24,14 @@
         <dependency>
             <groupId>com.lizhengi</groupId>
             <artifactId>lizhengi-ems-service</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.0.3-SNAPSHOT</version>
+        </dependency>
+
+        <!--    Knife4j 集 Swagger2 和 OpenAPI3 为一体的增强解决方案    -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+            <version>4.5.0</version>
         </dependency>
     </dependencies>
 
