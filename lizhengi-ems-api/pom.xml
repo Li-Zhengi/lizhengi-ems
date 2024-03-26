@@ -25,6 +25,13 @@
             <artifactId>lizhengi-ems-common</artifactId>
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
+
+        <!--    Redis依赖配置   -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
