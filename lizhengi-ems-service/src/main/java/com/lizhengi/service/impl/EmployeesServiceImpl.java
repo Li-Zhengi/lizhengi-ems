@@ -27,10 +27,10 @@ import java.util.List;
 @Slf4j
 public class EmployeesServiceImpl implements EmployeesService {
 
-    private EmployeesMapper mapper;
-
     private static final String EMPLOYEES_LIST_CACHE = "EmployeesListCaChe";
     private static final String EMPLOYEES_LIST_COUNT_CACHE = "EmployeesListCountCaChe";
+
+    private EmployeesMapper mapper;
 
     @Autowired
     public void setMapper(EmployeesMapper mapper) {
